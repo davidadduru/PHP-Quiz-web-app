@@ -43,7 +43,7 @@ function compute_score($answers = []) {
     $score = 0;
     for ($i = 0; $i < count($correct_answers); $i++) {
         if (isset($answers[$i]) && $correct_answers[$i] == $answers[$i]) {
-            $score += 100;
+            $score += 20;
         }
     }
     return $score;
